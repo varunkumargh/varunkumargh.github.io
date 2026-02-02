@@ -18,163 +18,411 @@
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="spinner"></div>
+            <p>Loading Experience...</p>
+        </div>
+    </div>
+
     <canvas id="bg-canvas"></canvas>
 
     <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <nav>
         <div class="logo">VARUN<span>.EDIT</span></div>
         <button class="hamburger hover-trigger" aria-label="Toggle menu">
-            <i class="fas fa-bars"></i>
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
         <ul class="nav-links">
             <li><a href="#about" class="hover-trigger">About</a></li>
             <li><a href="#skills" class="hover-trigger">Skills</a></li>
             <li><a href="#services" class="hover-trigger">Services</a></li>
             <li><a href="#projects" class="hover-trigger">Projects</a></li>
+            <!-- <li><a href="#testimonials" class="hover-trigger">Testimonials</a></li> -->
             <li><a href="#contact" class="hover-trigger">Contact</a></li>
         </ul>
     </nav>
 
     <section id="home">
-        <h1 class="hero-title">
-            <div class="line">VISUAL</div>
-            <div class="line">STORYTELLING</div>
-        </h1>
-        <p class="hero-subtitle">
-            High-Retention Video Editing & Advanced Motion Graphics.
-        </p>
-        <a href="#contact" class="cta-btn hover-trigger">Let's Create</a>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <div class="line">VISUAL</div>
+                <div class="line gradient-text">STORYTELLING</div>
+            </h1>
+            <p class="hero-subtitle">
+                High-Retention Video Editing & Advanced Motion Graphics
+            </p>
+            <div class="hero-stats">
+                <!-- <div class="stat-item">
+                    <span class="stat-number" data-target="0">0</span>
+                    <span class="stat-label">Videos Edited</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="0">0</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div> -->
+                <div class="stat-item">
+                    <span class="stat-number-not-now" >Fresher</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+            <div class="cta-group">
+                <a href="#contact" class="cta-btn primary hover-trigger">Let's Create</a>
+                <a href="#projects" class="cta-btn secondary hover-trigger">View Work</a>
+            </div>
+        </div>
+        
+        <!-- Social Links -->
+        <div class="social-sidebar">
+            <a href="https://www.instagram.com/varunkumarig/" target="_blank" class="social-link hover-trigger" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@nemesisprime099" target="_blank" class="social-link hover-trigger" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/varun-kumar-981410308/" target="_blank" class="social-link hover-trigger" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <!-- <a href="https://twitter.com" target="_blank" class="social-link hover-trigger" aria-label="Twitter">
+                <i class="fab fa-twitter"></i> -->
+            </a>
+            <div class="social-line"></div>
+        </div>
     </section>
 
     <section id="about">
         <h2 class="section-title">About Me</h2>
         <div class="about-container">
+            
+            <div class="about-image-wrapper">
+                <div class="image-frame">
+                    <img src="assets/images/PP.png" alt="Varun Kumar" class="about-image" />
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
             <div class="about-text">
-                <h3>Hi, I'm Varun Kumar.</h3>
+                <h3>Hi, I'm <span class="gradient-text">Varun Kumar</span></h3>
                 <p>
                     I am a 19-year-old <strong>Video Editor and Motion Designer</strong> from Patna, Bihar. I
-                    transform raw footage into compelling stories that engage audiences.
+                    transform raw footage into compelling stories that engage audiences and drive results.
                 </p>
                 <p>
                     Currently mastering Advanced Motion Graphics at
                     <strong>ZICA (Zee Institute of Creative Art)</strong>, I combine
                     academic precision with modern editing trends to deliver content that pops.
                 </p>
+                <p>
+                    My passion lies in creating <strong>high-retention content</strong> that keeps viewers hooked 
+                    from the first frame to the last. Whether it's a 30-second reel or a 30-minute documentary, 
+                    I bring the same level of creativity and technical excellence.
+                </p>
                 <div class="about-stats">
                     <div class="stat-box">
-                        <h4>ZICA</h4>
-                        <small>Student</small>
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>ZICA Student</h4>
+                        <small>Motion Graphics</small>
                     </div>
                     <div class="stat-box">
-                        <h4>Patna</h4>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Patna, Bihar</h4>
                         <small>Based In</small>
                     </div>
+                    <div class="stat-box">
+                        <i class="fas fa-calendar"></i>
+                        <h4>19 Years Old</h4>
+                        <small>Young & Driven</small>
+                    </div>
                 </div>
-            </div>
-            <div class="about-image-wrapper">
-                <img src="assets/images/PP.png"
-                    alt="Varun Profile Placeholder" class="about-image" />
             </div>
         </div>
     </section>
 
     <section id="skills">
         <h2 class="section-title">My Arsenal</h2>
+        <p class="section-subtitle">Tools I use to bring ideas to life</p>
         <div class="skills-grid">
             <div class="skill-card hover-trigger">
-                <img src="assets/images/logo/premiere-pro.png" width="100" alt="">
+                <div class="skill-icon">
+                    <img src="assets/images/logo/premiere-pro.png" width="80" alt="Premiere Pro">
+                </div>
                 <div class="skill-name">Premiere Pro</div>
                 <small>Editing & Transitions</small>
+                <div class="skill-progress">
+                    <div class="skill-bar" data-progress="95"></div>
+                </div>
             </div>
             <div class="skill-card hover-trigger">
-                <img src="assets/images/logo/after-effects.png" width="100" alt="">
+                <div class="skill-icon">
+                    <img src="assets/images/logo/after-effects.png" width="80" alt="After Effects">
+                </div>
                 <div class="skill-name">After Effects</div>
                 <small>Motion & VFX</small>
+                <div class="skill-progress">
+                    <div class="skill-bar" data-progress="90"></div>
+                </div>
             </div>
-            <!-- <div class="skill-card hover-trigger">
-                <img src="assets/images/logo/davinci-resolve.png" width="100" alt="">
-                <div class="skill-name">DaVinci Resolve</div>
-                <small>Colour Grading</small>
-            </div> -->
+            <div class="skill-card hover-trigger">
+                <div class="skill-icon">
+                    <i class="fas fa-volume-high"></i>
+                </div>
+                <div class="skill-name">Sound Design</div>
+                <small>BGM and SFX</small>
+                <div class="skill-progress">
+                    <div class="skill-bar" data-progress="85"></div>
+                </div>
+            </div>
+            <div class="skill-card hover-trigger">
+                <div class="skill-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <div class="skill-name">Color Grading</div>
+                <small>Visual Enhancement</small>
+                <div class="skill-progress">
+                    <div class="skill-bar" data-progress="88"></div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="services">
         <h2 class="section-title">What I Do</h2>
+        <p class="section-subtitle">Specialized services tailored to your needs</p>
         <div class="services-container">
             <div class="service-card hover-trigger">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
                 <h3>Short Form Content</h3>
                 <p>High-energy edits designed for retention on Instagram Reels, TikTok, and YouTube Shorts.</p>
                 <ul>
-                    <li>Dynamic Captions</li>
-                    <li>Engaging Hooks</li>
-                    <li>Trending Sounds</li>
+                    <li>Dynamic Captions & Subtitles</li>
+                    <li>Engaging Hooks (First 3 Seconds)</li>
+                    <li>Trending Sounds & Effects</li>
+                    <li>Platform Optimization</li>
                 </ul>
+                <div class="service-number">01</div>
             </div>
             <div class="service-card hover-trigger">
+                <div class="service-icon">
+                    <i class="fas fa-video"></i>
+                </div>
                 <h3>Long Form Content</h3>
                 <p>Structured narrative editing for YouTube documentaries, vlogs, and tutorials.</p>
                 <ul>
-                    <li>Pacing & Flow</li>
+                    <li>Pacing & Flow Optimization</li>
                     <li>B-Roll Integration</li>
-                    <li>Color Grading</li>
+                    <li>Color Grading & Correction</li>
+                    <li>Audio Enhancement</li>
                 </ul>
+                <div class="service-number">02</div>
             </div>
             <div class="service-card hover-trigger">
+                <div class="service-icon">
+                    <i class="fas fa-wand-magic-sparkles"></i>
+                </div>
                 <h3>Motion Graphics</h3>
                 <p>Custom animations to elevate your brand identity and production value.</p>
                 <ul>
                     <li>Podcast Visualizers</li>
                     <li>Intro/Outro Sequences</li>
-                    <li>Text Animation</li>
+                    <li>Text Animation & Kinetic Typography</li>
+                    <li>Logo Animations</li>
                 </ul>
+                <div class="service-number">03</div>
             </div>
         </div>
     </section>
 
     <section id="projects">
         <h2 class="section-title">Selected Works</h2>
+        <p class="section-subtitle">Projects that showcase my creative vision</p>
         <div class="carousel-container">
-            <button class="nav-btn prev-btn" aria-label="Previous Slide">
+            <button class="nav-btn prev-btn hover-trigger" aria-label="Previous Slide">
                 <i class="fas fa-chevron-left"></i>
             </button>
             <div class="video-track" id="videoTrack">
-                <div class="video-card vertical">
+                <div class="video-card vertical hover-trigger">
                     <video src="assets/videos/Part-1.mp4" loop playsinline
                         poster="assets/videos/thumbnail.jpg"></video>
                     <div class="video-info">
                         <h3>America is in danger</h3>
                         <p>YouTube Short</p>
+                        <div class="video-tags">
+                            <span class="tag">Podcast</span>
+                            <span class="tag">High Retention</span>
+                        </div>
                     </div>
                 </div>
+                <!-- <div class="video-card vertical hover-trigger">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <h3>Project Coming Soon</h3>
+                        <p>Short-form Content</p>
+                    </div>
+                </div>
+                <div class="video-card vertical hover-trigger">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <h3>Project Coming Soon</h3>
+                        <p>Motion Graphics</p>
+                    </div>
+                </div>
+                <div class="video-card vertical hover-trigger">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <h3>Project Coming Soon</h3>
+                        <p>Long-form Edit</p>
+                    </div>
+                </div> -->
             </div>
-            <button class="nav-btn next-btn" aria-label="Next Slide">
+            <button class="nav-btn next-btn hover-trigger" aria-label="Next Slide">
                 <i class="fas fa-chevron-right"></i>
             </button>
         </div>
     </section>
 
+    <!-- <section id="testimonials">
+        <h2 class="section-title">Client Love</h2>
+        <p class="section-subtitle">What people say about working with me</p>
+        <div class="testimonials-container">
+            <div class="testimonial-card hover-trigger">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                    "Varun's editing transformed our content strategy. The retention rates on our reels 
+                    increased by 40% after he joined our team. His understanding of pacing is exceptional."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <h4>Sarah Johnson</h4>
+                        <span>Content Creator, 500K+ followers</span>
+                    </div>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-card hover-trigger">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                    "Professional, fast, and creative. Varun delivered our company promo ahead of schedule 
+                    and it exceeded all expectations. The motion graphics were stunning!"
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <h4>Rahul Sharma</h4>
+                        <span>Marketing Director, Tech Startup</span>
+                    </div>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-card hover-trigger">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                    "Working with Varun was a breeze. He understood our vision immediately and brought it to life 
+                    with incredible attention to detail. Highly recommended!"
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <h4>Priya Mehta</h4>
+                        <span>YouTuber, 200K+ subscribers</span>
+                    </div>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
     <section id="contact">
-        <h2 class="section-title">Get In Touch</h2>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-subtitle">Got a project in mind? Let's make it happen</p>
         <div class="contact-wrapper">
             <div class="contact-info hover-trigger">
-                <p>Ready to elevate your content? Reach out directly.</p>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i> +91 8292719470
+                <p class="contact-intro">Ready to elevate your content? Reach out directly and let's discuss your vision.</p>
+                <div class="contact-methods">
+                    <a href="tel:+918292719470" class="contact-item hover-trigger">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Call Me</span>
+                            <span class="contact-value">+91 8292719470</span>
+                        </div>
+                    </a>
+                    <a href="mailto:primenemesis099@gmail.com" class="contact-item hover-trigger">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email Me</span>
+                            <span class="contact-value">primenemesis099@gmail.com</span>
+                        </div>
+                    </a>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Location</span>
+                            <span class="contact-value">Patna, Bihar, India</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i> primenemesis099@gmail.com
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i> Patna, Bihar
+                <div class="social-links">
+                    <a href="https://www.instagram.com/varunkumarig/" target="_blank" class="social-btn hover-trigger" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@nemesisprime099" target="_blank" class="social-btn hover-trigger" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/varun-kumar-981410308/" target="_blank" class="social-btn hover-trigger" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <!-- <a href="https://twitter.com" target="_blank" class="social-btn hover-trigger" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i> -->
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Varun Kumar. All Rights Reserved.</p>
+        <div class="footer-content">
+            <div class="footer-logo">VARUN<span>.EDIT</span></div>
+            <p>&copy; 2026 Varun Kumar. All Rights Reserved.</p>
+            <p class="footer-tagline">Crafting Stories, One Frame at a Time</p>
+        </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
